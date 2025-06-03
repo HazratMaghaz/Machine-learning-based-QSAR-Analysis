@@ -105,8 +105,8 @@ Certain folders (e.g., `DataSets/`, internal notes, raw CSVs) have been excluded
 
 If you have questions or wish to discuss collaboration or similar projects:
 
-**Fiverr:** [Your Profile]  
-**Email:** [Your Professional Email]
+**[Fiverr](https://www.fiverr.com/dromics05)**
+**[Email](maaz28608@gmail.com)
 
 ---
 
