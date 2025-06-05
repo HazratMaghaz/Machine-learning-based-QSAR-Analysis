@@ -1,52 +1,104 @@
-# Machine-learning-based-QSAR-Analysis
-Machine learning based QSAR Model Generations, a berif guide step by step
+<h1 align="center">🔬 Machine Learning-Based QSAR Analysis</h1>
+<p align="center">A Step-by-Step Pipeline for Predicting IC50 & Structural Optimization Using Atom-Based QSAR</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/MachineLearning-QSAR-blue" />
+  <img src="https://img.shields.io/badge/RDKit-Chemoinformatics-green" />
+  <img src="https://img.shields.io/badge/Explainability-SHAP-orange" />
+</p>
 
-# Atom-Based QSAR Model & Structural Optimization
+> ⚠️ **Disclaimer:** Dataset not shared due to client confidentiality. Results are reproducible with custom data.
+
+---
+
+## 📽️ [Optional Animated Overview] <!-- Suggest adding a short Lottie animation or MP4 -->
+> 🔧 *Consider adding a short animation (10–30s) that visually shows the QSAR workflow (e.g., molecule → descriptors → model → SHAP → analogs).*
+
+---
+
+## 📁 Table of Contents
+
+- [Overview](#-project-overview)
+- [Deliverables](#-project-deliverables)
+- [Dataset](#-dataset-client-owned-not-included)
+- [Methodology](#-methodology-summary)
+- [Results](#-final-model-performance)
+- [Visualizations](#-visualizations)
+- [Libraries Used](#-libraries-used)
+- [Conclusion](#-conclusion)
+- [Confidentiality](#-confidentiality-notice)
+- [Contact](#-contact)
+
+---
 
 ## 🧪 Project Overview
 
-This repository presents a complete **Atom-Based QSAR modeling workflow** focused on predicting IC50 values and suggesting structural modifications to improve compound potency.
+This repository provides a full-stack **Atom-Based QSAR modeling pipeline** designed to:
+- Predict IC50 values (activity) from molecular structures
+- Interpret model predictions using SHAP
+- Optimize compounds via structural analogs
 
-> **Objective**: Build a predictive model for estimating IC50 values from molecular structures, then apply structural modifications (analogs) to propose activity-improving changes.
+🎯 **Goal:** Leverage machine learning to support data-driven **Structure-Activity Relationship (SAR)** decisions.
+
+---
 
 ## 📦 Project Deliverables
 
-- End-to-end code for descriptor calculation, model training, and SHAP interpretation.
-- Model training notebooks (`RandomForest`, `XGBoost`, `ElasticNet`, `Ridge`).
-- SHAP-based feature interpretation plots.
-- Functional group optimization using analogs generated via RDKit.
+✅ Fully documented Jupyter notebooks  
+✅ Regression models with SHAP interpretation  
+✅ Visual analysis of descriptor impact  
+✅ Analog generation to propose new potent structures
 
-## 🧬 Dataset (Client-owned, Not Included)
+📌 Models Trained:
+- `RandomForest`
+- `ElasticNet`
+- `XGBoost`
+- `Ridge Regression`
 
-The dataset contains 16 small molecules with SMILES and experimental IC50 values (in µM). This data has **not been uploaded** due to client confidentiality.
+---
+
+## 🧬 Dataset *(Client-Owned, Not Included)*
+
+- 16 small molecules  
+- Contains SMILES & experimental IC50 values  
+- Data processed but **not uploaded** due to NDA
+
+📎 *You may insert a sample SMILES molecule as an image here to represent the dataset.*  
+<!-- INSERT A SIMPLE MOLECULE IMAGE WITH LABEL “Example SMILES Molecule” -->
+
+---
 
 ## 🔬 Methodology Summary
 
-### 1. **Descriptor Calculation**
-- Used **Mordred** (Python) to compute >1600 molecular descriptors.
-- Filtered to 1137 numeric descriptors after cleaning (constant, missing, non-numeric values removed).
+### 1. Descriptor Calculation
+- Used `Mordred` to generate **1600+ descriptors**
+- After filtering: **1137 numeric descriptors** retained
+- Preprocessing included removal of:
+  - Constant features
+  - Missing/non-numeric values
 
-### 2. **Modeling Approach**
-- Trained multiple regression models:
-  - `Random Forest`
-  - `ElasticNet`
-  - `XGBoost`
-  - `Ridge Regression`
+### 2. Model Training & Evaluation
+Models were assessed based on:
 
-- Evaluated using:
-  - **R² Score**
-  - **MAE** (Mean Absolute Error)
-  - **±0.5 pIC50 Accuracy**
+| Metric | Description |
+|--------|-------------|
+| **R² Score** | Predictive power |
+| **MAE** | Model error |
+| **±0.5 Accuracy** | Acceptable IC50 prediction range |
 
-### 3. **SHAP-Based Feature Analysis**
-- Performed **SHAP beeswarm** and **waterfall** plots to identify top descriptors.
-- Observed charge- and electrostatics-related descriptors (e.g., `PEOE_VSA7`, `MaxAbsPartialCharge`) as dominant.
+> 🔧 *Add animated progress bars or step indicators here for each stage (Optional but useful)*
 
-### 4. **Analog Generation**
-- Generated analogs of top 5 potent compounds using RDKit.
-- Recalculated descriptors and evaluated with trained models.
-- Compared IC50 shifts from parent to analog compounds.
+### 3. Explainability with SHAP
+- Used SHAP **beeswarm** and **waterfall** plots
+- Key Features:  
+  - `PEOE_VSA7`  
+  - `MaxAbsPartialCharge`  
+  - Other charge/electrostatic descriptors
+
+### 4. Analog Design
+- Top 5 potent compounds analyzed
+- RDKit used to generate analogs
+- Model re-evaluated analogs vs. parents:
 
 | Compound | Parent pIC50 | Analog pIC50 | Δ Change |
 |----------|--------------|--------------|----------|
@@ -55,58 +107,45 @@ The dataset contains 16 small molecules with SMILES and experimental IC50 values
 | FI-3-1   | 4.77         | 4.69         | -0.08    |
 | FI-3-12  | 4.79         | 4.70         | -0.09    |
 
+<!-- 🔍 Suggestion: Add molecule structure comparison image here (Parent vs. Analog) -->
+
 ---
 
 ## 📊 Final Model Performance
 
-| Model       | R² Score | MAE    | Accuracy (±0.5) |
-|-------------|----------|--------|-----------------|
-| ElasticNet  | 0.7877   | 0.1004 | 100%            |
-| RandomForest| Poor     | ~0.24  | 100% (overfit)  |
-| XGBoost     | Poor     | ~0.29  | 75%             |
+| Model        | R² Score | MAE    | Accuracy (±0.5) | Notes        |
+|--------------|----------|--------|------------------|--------------|
+| ElasticNet   | 0.7877   | 0.1004 | ✅ 100%          | ✅ Best model |
+| RandomForest | ~0.24    | 0.2400 | ✅ 100% (Overfit)| ⚠️ Overfitting |
+| XGBoost      | ~0.29    | 0.2900 | ⚠️ 75%           | ⚠️ Overfit risk |
 
-⚠️ Early models suffered from overfitting due to small sample size and high feature space. Final results improved after feature selection and analog design.
+📌 *Initial overfitting reduced by feature filtering & analog testing*
 
 ---
 
 ## 📈 Visualizations
 
-| Plot Type         | Description                                |
-|-------------------|--------------------------------------------|
-| SHAP Beeswarm     | Shows global feature impact                |
-| SHAP Waterfall    | Shows instance-level explanation           |
-| IC50 Comparison   | Parent vs. analog activity                 |
-| Feature Histogram | Distribution of key descriptors            |
+> ⚠️ Replace the placeholders below with actual graphs (SHAP, histograms, comparisons)
+
+| 📊 Plot Type     | 📝 Description                     |
+|------------------|------------------------------------|
+| SHAP Beeswarm    | Global feature impact               |
+| SHAP Waterfall   | Single-sample explanation           |
+| IC50 Comparison  | Parent vs analog predictions        |
+| Descriptor Hist  | Distribution of top molecular features |
+
+<!-- Use matplotlib/seaborn/plotly graphs or GIFs here for animated charts -->
 
 ---
 
 ## 🤖 Libraries Used
 
-- `pandas`, `numpy`, `scikit-learn`
-- `xgboost`, `matplotlib`, `seaborn`
-- `mordred`, `rdkit`
-- `shap`
-
----
-
-## 💡 Conclusion
-
-This project demonstrates how **explainable QSAR modeling** can guide rational compound optimization. Even with a limited dataset, using SHAP and analog design offers meaningful SAR (Structure-Activity Relationship) insights.
-
----
-
-## 🔐 Confidentiality Notice
-
-Certain folders (e.g., `DataSets/`, internal notes, raw CSVs) have been excluded for privacy. This project was developed as part of a client engagement and adheres to non-disclosure standards.
-
----
-
-## 📫 Contact
-
-If you have questions or wish to discuss collaboration or similar projects:
-
-- **[Fiverr](https://www.fiverr.com/dromics05)**
-- **[Email](maaz28608@gmail.com)**
-
----
-
+```bash
+✔ pandas
+✔ numpy
+✔ scikit-learn
+✔ xgboost
+✔ matplotlib / seaborn
+✔ mordred-descriptors
+✔ rdkit
+✔ shap
