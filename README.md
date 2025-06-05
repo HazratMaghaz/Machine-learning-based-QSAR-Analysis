@@ -149,3 +149,20 @@ Models were assessed based on:
 ✔ mordred-descriptors
 ✔ rdkit
 ✔ shap
+
+```
+---
+
+## 📫 Contact Me
+
+I'm open to collaboration, freelance projects, or discussing QSAR/bioinformatics-related work.
+
+<p align="left">
+  <a href="https://www.fiverr.com/dromics05" target="_blank">
+    <img src="https://img.shields.io/badge/Fiverr-Dromics05-success?style=for-the-badge&logo=fiverr" />
+  </a>
+  <a href="mailto:maaz28608@gmail.com">
+    <img src="https://img.shields.io/badge/Email-maaz28608@gmail.com-red?style=for-the-badge&logo=gmail" />
+  </a>
+</p>
+
