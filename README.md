@@ -42,7 +42,6 @@ This repository provides a full-stack **Atom-Based QSAR modeling pipeline** desi
 
 ---
 
-this include the hypthesis 
 ## 📦 Project Deliverables
 
 ✅ Fully documented Jupyter notebooks  
