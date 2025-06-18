@@ -1,0 +1,11 @@
+﻿ID,Comd. Name,M.M,SMILE,IC50±SD
+AF-K-II,"(E)-N'-(1-(2,4-dihydroxy phenyl) ethylidene)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)propane hydrazide",392,FC(C=C(C(C)C(N/N=C(C)/C1=C(O)C=C(O)C=C1)=O)C=C2)=C2C3=CC=CC=C3,18.8
+AF-K-III,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(1-(4-nitrophenyl)ethylidene) propanehydrazide",406,FC(C=C(C(C)C(N/N=C(C)/C1=CC=C([N+]([O-])=O)C=C1)=O)C=C2)=C2C3=CC=CC=C3,16.63
+AF-K-IV,"(Z)-2-(2-fluoro-[1,1'-bi phenyl]-4-yl)-N'-(6-methoxy-3,4-dihydro naphthalen-1 (2H)-ylidene)propane hydrazide",417,FC(C=C(C(C)C(N/N=C1CCCC2=C/1C=CC(OC)=C2)=O)C=C3)=C3C4=CC=CC=C4,12.02
+AF-K-V,"N'-((1E,2E)-1,3-diphenyl allylidene)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)propane hydrazide",448,FC(C=C(C(C)C(N/N=C(\C=C\C1=CC=CC=C1)C2=CC=CC=C2)=O)C=C3)=C3C4=CC=CC=C4,23.37
+AF-K-VII,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(1-phenylethylidene) propanehydrazide",361,FC(C=C(C(C)C(N/N=C(C)/C1=CC=CC=C1)=O)C=C2)=C2C3=CC=CC=C3,26.19
+AF-K-VIII,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(1-phenylpropylidene)propanehydrazide",375,FC(C=C(C(C)C(N/N=C(CC)/C1=CC=CC=C1)=O)C=C2)=C2C3=CC=CC=C3,13.26
+AF-K-IX,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(2-methyl-1-phenylpropylidene)propanehydrazide",388,FC(C=C(C(C)C(N/N=C(C(C)C)/C1=CC=CC=C1)=O)C=C2)=C2C3=CC=CC=C3,17.17
+AF-K-X,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(1-phenylpentylidene)propanehydrazide",402,FC(C=C(C(C)C(N/N=C(CCCC)/C1=CC=CC=C1)=O)C=C2)=C2C3=CC=CC=C3,29.62
+AF-K-XI,"(E)-N'-(1-cyclopropylethylidene)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)propanehydrazide",324,FC(C=C(C(C)C(N/N=C(C)/C1CC1)=O)C=C2)=C2C3=CC=CC=C3,81.56
+AF-K-XII,"(E)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)-N'-(1-phenylbutylidene)propanehydrazide",388,FC(C=C(C(C)C(N/N=C(CCC)/C1=CC=CC=C1)=O)C=C2)=C2C3=CC=CC=C3,38.49

@@ -1,0 +1,8 @@
+Compound_ID,SMILES,Nature
+FI-3-10,CCOC(=O)C1=C(C)NC2=C(C(=O)CC(C)(C)C2)C1c1cc(C)c(OCC(=O)N/N=C\c2cccc(O)c2)c(Br)c1,Analog
+FI-3-9,CCOC(=O)C1=C(C)NC2=C(C(=O)CC(C)(C)C2)C1c1cc(C)c(OCC(=O)N/N=C\c2cc(Br)c(O)c(Br)c2)c(Br)c1,Analog
+FI-3-9,CCOC(=O)C1=C(C)NC2=C(C(=O)CC(C)(C)C2)C1c1cc(Br)c(OCC(=O)N/N=C\c2cc(C)c(O)c(Br)c2)c(Br)c1,Analog
+FI-3-14,CCOC(=O)C1=C(C)NC2=C(C(=O)CC(C)(C)C2)C1c1cc(C)c(OCC(=O)N/N=C\c2ccc(OC)c(OC)c2)c(Br)c1,Analog
+FI-3-10,O=C(CC(C)(C)C1)C2=C1NC(C)=C(C(OCC)=O)C2C3=CC(Br)=C(OCC(N/N=C\C4=CC=CC(O)=C4)=O)C(Br)=C3,Parent
+FI-3-9,O=C(CC(C)(C)C1)C2=C1NC(C)=C(C(OCC)=O)C2C3=CC(Br)=C(OCC(N/N=C\C4=CC(Br)=C(O)C(Br)=C4)=O)C(Br)=C3,Parent
+FI-3-14,O=C(CC(C)(C)C1)C2=C1NC(C)=C(C(OCC)=O)C2C3=CC(Br)=C(OCC(N/N=C\C4=CC=C(OC)C(OC)=C4)=O)C(Br)=C3,Parent
