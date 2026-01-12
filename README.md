@@ -11,11 +11,6 @@
 
 ---
 
-## 📽️ [Optional Animated Overview] <!-- Suggest adding a short Lottie animation or MP4 -->
-> 🔧 *Consider adding a short animation (10–30s) that visually shows the QSAR workflow (e.g., molecule → descriptors → model → SHAP → analogs).*
-
----
-
 ## 📁 Table of Contents
 
 - [Overview](#-project-overview)
